@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        gap: 1rem;
+        margin: 2rem;
+    }
+
+    #menu {
+        display: none;        
+        }
+
+    
+
+    .buttons button,
+    .course-buttons button {
+        width: auto;
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+}
