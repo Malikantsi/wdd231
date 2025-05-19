@@ -11,6 +11,14 @@ lastModified.innerHTML = `Last Modified: <span class="highlight">${new Intl.Date
 const currentYear = document.querySelector("#currentYear");
 const year = today.getFullYear();
 currentYear.innerHTML = ` ${year} `;
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector(' nav');
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
+
 
 const courses = [
     {
@@ -95,16 +103,20 @@ const courses = [
 
 function DisplayAllCourses(courses) {
     const certificate = document.querySelector(".course-buttons");
+    const coursecredit = document.querySelector("#coursecredit"); 
+    let sumcredit = 0;
     certificate.innerHTML = "";
     courses.forEach(course => {
         let button = document.createElement("Button");
         button.innerHTML = course.subject + course.number;
+        sumcredit += course.credits;
         if (course.completed==true) {
             button.classList.add("course-complete");
             // console.log(`Course: ${course.subject} ${course.number} ${course.completed}`);
         } else {
             button.classList.add("course-incomplete");
         }
+        coursecredit.innerHTML = `The total number of credits for the courses listed below is ${sumcredit}`;
         certificate.appendChild(button);
 
     })
