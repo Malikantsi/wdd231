@@ -103,7 +103,6 @@ const courses = [
 
 function DisplayAllCourses(courses) {
     const certificate = document.querySelector(".course-buttons");
-    const coursecredit = document.querySelector("#coursecredit"); 
     let sumcredit = 0;
     certificate.innerHTML = "";
     courses.forEach(course => {
@@ -112,15 +111,18 @@ function DisplayAllCourses(courses) {
         sumcredit += course.credits;
         if (course.completed==true) {
             button.classList.add("course-complete");
-            // console.log(`Course: ${course.subject} ${course.number} ${course.completed}`);
         } else {
             button.classList.add("course-incomplete");
         }
-        coursecredit.innerHTML = `The total number of credits for the courses listed below is ${sumcredit}`;
+        Reduce(sumcredit);
         certificate.appendChild(button);
 
     })
 } 
+function Reduce(Credits) {
+    const coursecredit = document.querySelector("#coursecredit");
+    coursecredit.innerHTML = `The total number of credits for the courses listed below is ${Credits}`;
+}
 
 
     document.querySelectorAll('.buttons button').forEach(button => {
