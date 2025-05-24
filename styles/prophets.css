@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+
+body{
+    font-family: Roboto,  'Open Sans';
+    
+    background-color: aliceblue;
+    border: solid black 2px;
+    
+
+}
+
+header{
+    background-color:darkolivegreen;
+    color: black;
+    text-align: center;
+    
+    padding: 2rem;
+
+
+}
+
+main {
+    display: flex;
+    justify-content:space-between;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    /* min-height: 80vh; */
+    margin: 0 auto;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    
+}
+#cards section {
+    background-color: white;
+    /* padding: 1rem; */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#cards h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem; }
+
+#cards img {
+  width: 70%;         /* Fill the width of the container */
+  height: auto;        /* Keep aspect ratio */
+  border-radius: 8px;  /* Rounded corners (optional) */
+  object-fit: cover;   /* Crop image if needed */
+  max-height: 300px;   /* Optional: limit height to keep layout tidy */
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color:darkolivegreen ;
+  color: black;
+}
