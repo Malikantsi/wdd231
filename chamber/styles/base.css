@@ -1,0 +1,157 @@
+:root {
+    /* Primary Brand Colors */
+    --color-primary: #8F5AFF;
+    /* Vibrant purple from the logo */
+    --color-primary-light: #D8CCFF;
+    /* Soft light purple for backgrounds or accents */
+
+    /* Neutrals */
+    --color-black: #121212;
+    /* Deep black background */
+    --color-white: #FFFFFF;
+    /* Main text on dark background */
+    --color-gray: #C0C0D0;
+    /* Subtext or secondary UI elements */
+    --color-light-gray: #E6E6FA;
+    /* Hover backgrounds or dividers */
+
+    /* Accent Colors */
+    --color-accent: #4682B4;
+    /* Steel blue for highlights/links */
+    --color-hover: #A085FF;
+    /* Lighter purple hover effect */
+
+    /* Utility */
+    --text-main: var(--color-white);
+    --text-secondary: var(--color-gray);
+    --background-dark: var(--color-black);
+    --background-light: var(--color-light-gray);
+}
+
+/*------------------------------- header--------------------------------------------------- */
+header{
+    background-color:var(--color-accent) ;
+    color: var(--color-white);
+    text-align: center;
+    position: relative;    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 10%;
+    margin: 0 20px;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+nav {
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    background-color: black;
+    border: 1px solid black;
+    padding: .5rem;
+    font-weight: 800;
+}
+
+nav a {
+    color:var(--color-white);
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+nav a:hover {
+    background-color: var(--color-hover);
+    transform: scale(1.05);
+    color: var(--color-black);
+}
+/*------------------------------- header----------------------------------------------------- */
+
+
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-black);
+}
+h1{
+text-align: center;}
+
+/*------------------------------- cards----------------------------------------------------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+
+}
+
+.cards section {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.cards section:hover {
+    transform: translateY(-5px); 
+}
+
+.cards img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0; }
+
+.cards h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent);
+}
+
+.cards p {
+    margin: 0.3rem 0;    
+    padding: 5px;
+}
+
+.label {
+    font-weight: bold;
+     }
+
+.cards a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color:var(--color-accent);
+    text-decoration: none;
+}
+
+.cards a:hover {
+    text-decoration: underline;
+    color: var(--color-accent); }
+
+
+
+
+/*------------------------------- cards----------------------------------------------------- */
+
+/* -------------------------footer-------------------------- ----------------------------------*/
+footer {
+    background-color: var(--color-accent);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+/* -------------------------footer-------------------------- */

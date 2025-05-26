@@ -2,6 +2,7 @@ const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.
 const cards = document.querySelector('#cards');
 
 async function getProphetData() {
+    
     const responce = await fetch(url);
     const data = await responce.json();
     console.table(data.prophets);

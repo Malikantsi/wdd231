@@ -1,0 +1,72 @@
+[
+    {
+        "name": "SowetoTech Solutions",
+        "address": "123 Vilakazi Street, Soweto, Johannesburg",
+        "phone": "+27 11 123 4567",
+        "website": "https://www.sowetotech.co.za",
+        "image": "local-img.png",
+        "membershipLevel": 3,
+        "description": "Innovative tech company specializing in digital infrastructure and training.",
+        "yearJoined": 2019
+    },
+    {
+        "name": "Ubuntu Bakery",
+        "address": "45 Mooki Street, Soweto",
+        "phone": "+27 11 765 4321",
+        "website": "https://www.ubuntubakery.co.za",
+        "image": "local-img.png",
+        "membershipLevel": 1,
+        "description": "Local favorite known for artisanal breads and community outreach.",
+        "yearJoined": 2021
+    },
+    {
+        "name": "Kgosi Security Services",
+        "address": "78 Maponya Drive, Soweto",
+        "phone": "+27 11 890 3344",
+        "website": "https://www.kgosisecurity.co.za",
+        "image": "local.png",
+        "membershipLevel": 2,
+        "description": "Residential and commercial security with 24/7 patrol units.",
+        "yearJoined": 2020
+    },
+    {
+        "name": "Mzansi Auto Repairs",
+        "address": "12 Chris Hani Road, Soweto",
+        "phone": "+27 11 909 8765",
+        "website": "https://www.mzansiauto.co.za",
+        "image": "local-img.png",
+        "membershipLevel": 1,
+        "description": "Affordable and reliable vehicle repairs and maintenance.",
+        "yearJoined": 2018
+    },
+    {
+        "name": "Jozi Creatives Studio",
+        "address": "9 Jabulani Mall, Soweto",
+        "phone": "+27 11 321 1234",
+        "website": "https://www.jozicreatives.co.za",
+        "image": "local-img.png",
+        "membershipLevel": 3,
+        "description": "Design and marketing agency empowering local brands.",
+        "yearJoined": 2022
+    },
+    {
+        "name": "Soweto Eco Gardens",
+        "address": "61 Naledi Section, Soweto",
+        "phone": "+27 11 567 7890",
+        "website": "https://www.ecogardens.co.za",
+        "image": "local-img.png",
+        "membershipLevel": 2,
+        "description": "Urban farming initiative promoting sustainability and food security.",
+        "yearJoined": 2020
+    },
+    {
+        "name": "Thabo's Digital Print",
+        "address": "30 Klipspruit Valley Rd, Soweto",
+        "phone": "+27 11 666 8888",
+        "website": "https://www.thabodigital.co.za",
+        "image": "local-img.png",
+        "membershipLevel": 1,
+        "description": "Quick turnaround printing, branding, and signage services.",
+        "yearJoined": 2023
+    }
+]
