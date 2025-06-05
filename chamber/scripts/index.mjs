@@ -133,6 +133,7 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
+    document.getElementById("weather-icon").src = iconsrc;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', iconsrc);
     captionDesc.textContent = `${desc}`;
