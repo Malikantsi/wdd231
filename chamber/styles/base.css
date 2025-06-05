@@ -29,11 +29,11 @@
 }
 
 /*------------------------------- header--------------------------------------------------- */
-header{
-    background-color:var(--color-accent) ;
+header {
+    background-color: var(--color-accent);
     color: var(--color-white);
     text-align: center;
-    position: relative;    
+    position: relative;
 }
 
 .logo {
@@ -50,13 +50,15 @@ header{
     border-radius: 10%;
     margin: 0 20px;
 }
+
 .logo h1 {
     margin: 0;
     font-size: 2.5rem;
 }
+
 nav {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     flex-wrap: wrap;
     background-color: black;
     border: 1px solid black;
@@ -65,11 +67,13 @@ nav {
 }
 
 nav a {
-    color:var(--color-white);
-    padding: 10px;
+    color: var(--color-white);
+    padding: 7px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
-    margin: 0 auto;
+    margin: 0 5rem;
+    font-size: large;
+
 }
 
 nav a:hover {
@@ -77,35 +81,118 @@ nav a:hover {
     transform: scale(1.05);
     color: var(--color-black);
 }
+
 /*------------------------------- header----------------------------------------------------- */
 
-
-
-body {
-    background-color: var(--background-light);
-    color: var(--text-black);
+/* --------------------------------------------hero------------------------------------- */
+.hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 0;
 }
-main{
-    max-width: 1200px;
+
+.hero img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    height: 100px;
+}
+
+.join {
+    font-size: 1.5rem;
+    color: #fff;
+
+    margin: 0;
+
+}
+
+#join-button:hover {
+    background-color: var(--color-hover);
+    color: #fff;
+
+
+}
+
+#join-button {
+
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    align-items: center;
     margin: 1rem auto;
 }
-h1{
-text-align: center;}
+
+
+
+/* --------------------------------------------hero------------------------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    background-color: var(--background-light);
+    color: var(--text-black);
+
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0.5rem auto;
+}
+
+#mainId {
+    max-width: 100%;
+    width: 70%;
+    margin: 0.5rem auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
 
 /* ------------------------------Grid and List View Button -------------------------------- */
 
-.view-toggle{
+.view-toggle {
     margin: 1rem 0;
     text-align: center;
 }
 
-.view-toggle button{
+.view-toggle button {
     color: var(--color-white);
     width: 100px;
     background-color: var(--color-black);
     padding: .8rem;
     border-radius: 5px;
 }
+
+
+
 
 /*------------------------------- cards----------------------------------------------------- */
 
@@ -126,14 +213,32 @@ text-align: center;}
 }
 
 .cards section:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
 }
 
 .cards img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+}
+
+.home-card h2 {
+    text-align: center;
+}
+
+.home-card .business-tag-line {
+    text-align: center;
+    border-bottom: 1px solid #121212;
+    width: 100%;
+
+}
+
+.home-card img {
+    width: 150px;
+    float: left;
+    margin: 5px 20px;
+}
 
 .cards h2 {
     font-size: 1.25rem;
@@ -142,24 +247,25 @@ text-align: center;}
 }
 
 .cards p {
-    margin: 0.3rem 0;    
+    margin: 0.3rem 0;
     padding: 5px;
 }
 
 .label {
     font-weight: bold;
-     }
+}
 
 .cards a {
     display: inline-block;
     margin-top: 0.5rem;
-    color:var(--color-accent);
+    color: var(--color-accent);
     text-decoration: none;
 }
 
 .cards a:hover {
     text-decoration: underline;
-    color: var(--color-accent); }
+    color: var(--color-accent);
+}
 
 /*----------------------------------Cards List View----------------------------------*/
 .cards-list {
@@ -212,11 +318,103 @@ text-align: center;}
 
 .cards-list a:hover {
     text-decoration: underline;
-    color: var(--color-accent); }    
+    color: var(--color-accent);
+}
 
 
 
 /*------------------------------- cards----------------------------------------------------- */
+
+
+.midde-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    /* margin-bottom: 10px; */
+}
+
+.midde-content h1 {
+    margin: 0;
+}
+
+#events {
+    grid-column: 1 / 3;
+    border-radius: 8px;
+}
+
+.midde-content section {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.midde-content .weather {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    border-radius: 8px;
+
+}
+
+.midde-content section h2 {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    text-align: left;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    grid-column: 1 / 3;
+}
+
+.event-list li {
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.event-list h3,
+p {
+    margin: 0;
+}
+
+.weather-today {
+    border-radius: 5px;
+    display: grid;
+    row-gap: 0;
+    grid-template-columns: 1fr 1fr;
+}
+
+.weather-today figure {
+    grid-row: 2/9;
+}
+
+.weather-today p {
+    margin-top: 20px;
+}
+
+.weather-today,
+.weather-forecast span {
+    padding: 0 10px;
+}
+
+.weather-forecast p {
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+#home-cards {
+    margin-top: 50px;
+
+}
+
+.home-description {
+    align-items: center;
+    padding: 1rem;
+    margin: 0 10px;
+    font-size: medium;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+}
 
 /* -------------------------footer-------------------------- ----------------------------------*/
 footer {
@@ -225,4 +423,5 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
 /* -------------------------footer-------------------------- */

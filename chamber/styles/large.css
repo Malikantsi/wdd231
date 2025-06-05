@@ -28,6 +28,12 @@
 
 /* -------------------- For small devices -------------------- */
 @media screen and (max-width: 500px) {
+
+    .midde-content {
+        display: flex;
+        flex-direction: column;
+    }
+
     body {
         width: 100%;
     }
@@ -43,9 +49,26 @@
         text-align: center;
     }
 
+    .hero-content {
+        left: 80%;
+        top: 80%;
+        background: none;
+    }
+
+    #join-button {
+        padding: 0.5rem 1rem;
+        width: 150px;
+
+    }
+
+    .hero-content .join {
+        display: none;
+    }
+
     .logo {
         flex-direction: column;
         text-align: center;
+        margin: 0;
     }
 
     .logo img {
@@ -58,6 +81,12 @@
         align-items: center;
         gap: 1rem;
         padding: 1rem;
+    }
+
+    #mainId {
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     nav {
@@ -83,6 +112,10 @@
         width: 100%;
     }
 
+    nav a:hover {
+        text-decoration: overline;
+    }
+
     #menu {
         font-size: 1.5rem;
         border: none;
@@ -106,26 +139,29 @@
 
     .cards-list section {
         display: grid;
-        grid-template-columns: 1FR 3FR;        
+        grid-template-columns: 1FR 3FR;
     }
-    
+
     .cards-list img {
         width: 80PX;
-        height: auto;        
+        height: auto;
         grid-row: 1/6;
         align-self: center;
     }
+
     .cards img {
         margin: 1rem auto;
         display: block;
         width: 80px;
     }
+
+
     .cards-list p,
     .cards-list h2,
     .cards-list a {
         padding: 0.3rem;
     }
-    
+
 
     footer {
         flex-direction: column;

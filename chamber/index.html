@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soweto Think Chamber of Commerce home page">
+    <meta name="author" content="Malikantsi Lekhoana">
+    <meta property="og:title" content="Soweto Think Chamber of Commerce home page">
+    <meta property="og:description"
+        content="A home page that displays events links to all the other pages and a few of our companies on the spotlight.">
+    <meta property="og:image" content="chamber/images/soweto.jpg">
+    <meta property="og:url" content="https://malikantsi.github.io/wdd231/chamber/index.html">
+    <title>Soweto Think Chamber of Commerce Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/index.mjs" type="module" defar></script>
+    <!-- <script src="scripts/directory.js" defer></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/chamber-logo.png" alt="logo">
+            <h1>Soweto Think Chamber of Commerce</h1>
+        </div>
+        <button type="button" id="menu" name="menu" aria-label="menu"></button>
+
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="">Discover</a>
+            <a href="directory.html">Business Directory</a>
+            <a href="join.html">Join</a>
+            <a href="">About</a>
+            <a href="">News</a>
+            <a href="">Events</a>
+        </nav>
+    </header>
+
+    <main id="mainId">
+        <div class="hero">
+            <img src="images/sandton.webp" alt="hero">
+            <div class="hero-content">
+                <p class="join">Become a member of sowetans today!</p>
+                <a href="join.html" id="join-button">Join Now</a>
+            </div>
+        </div>
+
+
+        <section class="midde-content">
+            <h1>Home</h1>
+            <section id="events">
+
+                <h2>Events</h2>
+                <div class="events-content">
+                    <ul class="event-list">
+                        <li>
+                            <h3>Community Clean-Up</h3>
+                            <p>Date: June 20, 2025</p>
+                            <p>Join neighbors to clean local parks and streets. Supplies provided.</p>
+                        </li>
+
+                        <li>
+                            <h3>Business on the BRICS markets</h3>
+                            <p>Date: August 20, 2025</p>
+                            <p>The Faculty of International Business of the Russian Foreign Trade Academy (RFTA) of the
+                                Ministry of Economic
+                                Development of the Russian Federation is launching a new master’s program “International
+                                Business on the BRICS markets”
+                                in the 2024/2025 academic year.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>EYWA project</h3>
+                            <p>Date: December 20, 2025</p>
+                            <p>An EU representative welcomed participants from 25 Civil Society Organisations (CSOs)
+                                from
+                                the region to reflect in a
+                                collaborative effort on the challenges faced by young people and women in accessing
+                                employment and entrepreneurship.</p>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </section>
+            <section class="weather-today">
+                <h2>Today's weather</h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p><span id="current-temp"></span></p>
+                <p><span id="weather-desc"></span></p>
+                <p><span id="high-temp"></span></p>
+                <p><span id="low-temp"></span></p>
+                <p><span id="humidity"></span></p>
+                <p><span id="sunrise"></span></p>
+                <p><span id="sunset"></span></p>
+            </section>
+            <section class="weather-forecast">
+                <h2>Weather forecast</h2>
+                <p><span id="today"></span></p>
+                <p><span id="tomorrow"></span></p>
+                <p><span id="dayAfterTomorrow"></span></p>
+            </section>
+
+        </section>
+
+        <section id="home-cards" class="cards">
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Contact Us : info@sowetothink.co.za | +27 11 359 6150</p>
+        <p>&copy;<span id="currentYear"></span>Soweto Think Chamber Of commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
