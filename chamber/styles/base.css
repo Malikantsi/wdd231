@@ -397,10 +397,10 @@ p {
     margin-top: 20px;
 }
 
-.weather-today,
+/* .weather-today,
 .weather-forecast span {
     padding: 0 10px;
-}
+} */
 
 .weather-forecast p {
     margin: 20px;
