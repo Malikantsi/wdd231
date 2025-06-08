@@ -6,7 +6,7 @@ lastModified.innerHTML = `Last Modified: <span class="highlight">${new Intl.Date
     {
         dateStyle: "full"
     }
-).format(today)}</span>`; 
+).format(today)}</span>`;
 
 const currentYear = document.querySelector("#currentYear");
 const year = today.getFullYear();
@@ -109,40 +109,63 @@ function DisplayAllCourses(courses) {
         let button = document.createElement("Button");
         button.innerHTML = course.subject + course.number;
         sumcredit += course.credits;
-        if (course.completed==true) {
+        if (course.completed == true) {
             button.classList.add("course-complete");
         } else {
             button.classList.add("course-incomplete");
         }
         Reduce(sumcredit);
+        button.addEventListener("click", () => {
+            DisplayCourseDetails(course);
+        });
         certificate.appendChild(button);
 
     })
-} 
+}
+
+function DisplayCourseDetails(course) {
+    const courseDetails = document.querySelector('#course-details');
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `<button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><b>Credits: </b>${course.credits}</p>
+    <p><strong> Certificates: </strong>${course.certificate}</p>
+    <p><strong> Description: </strong>${course.description}</p>
+    <p><strong> Technologies: </strong>${course.technology}</p>`;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#closeModal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
 function Reduce(Credits) {
     const coursecredit = document.querySelector("#coursecredit");
     coursecredit.innerHTML = `The total number of credits for the courses listed below is ${Credits}`;
 }
 
 
-    document.querySelectorAll('.buttons button').forEach(button => {
-        const certificate = document.querySelector(".course-buttons");
-        let filteredCourse;
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            let filter = button.getAttribute("ID");
-            if (filter === "CSE" || filter === "WDD") {
-                // console.log(certificate);
-                certificate.innerHTML = "";
-                filteredCourse = courses.filter(course => course.subject === filter);
-                DisplayAllCourses(filteredCourse);
-            }
-            else {
-                DisplayAllCourses(courses);   
-            }
-            
-        })
-    })
+document.querySelectorAll('.buttons button').forEach(button => {
+    const certificate = document.querySelector(".course-buttons");
+    let filteredCourse;
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        let filter = button.getAttribute("ID");
+        if (filter === "CSE" || filter === "WDD") {
+            // console.log(certificate);
+            certificate.innerHTML = "";
+            filteredCourse = courses.filter(course => course.subject === filter);
+            DisplayAllCourses(filteredCourse);
+        }
+        else {
+            DisplayAllCourses(courses);
+        }
 
-    
+    })
+})
+
+
 DisplayAllCourses(courses);
