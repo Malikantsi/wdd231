@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soweto Think Chamber of Commerce join page">
+    <meta name="author" content="Malikantsi Lekhoana">
+    <meta property="og:title" content="Soweto Think Chamber of Commerce join page">
+    <meta property="og:description"
+        content="A join page where a you can sign up to be part of soweto think Chamber of commerce">
+    <meta property="og:image" content="https://github.com/Malikantsi/wdd231/blob/main/chamber/images/sandton.webp">
+    <meta property="og:url" content="https://malikantsi.github.io/wdd231/chamber/join.html">
+    <title>Soweto Think Chamber of Commerce Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- <script src="scripts/index.mjs" type="module"></script> -->
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">
+            <img src="images/chamber-logo.png" alt="logo">
+            <p class="heading">Soweto Think Chamber of Commerce</p>
+        </div>
+        <button type="button" id="menu" name="menu" aria-label="menu"></button>
+
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="">About</a>
+            <a href="">News</a>
+            <a href="">Events</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join Soweto Think Chamber of Commerce</h1>
+        <section class="form-and-cards">
+
+            <form method="GET" action="thankyou.html" class="designOne">
+                <h2>Membership Application form</h2>
+                <label>
+                    First Name
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input type="text" name="Organizationaltitle" autocomplete="organization-title"
+                        pattern="[A-Za-z\- ]{7,}"
+                        title="Please enter at least 7 alphabetic characters, hyphens, or spaces only.">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email">
+                </label>
+
+                <label>
+                    Cell Phone
+                    <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes">
+                </label>
+
+                <label>
+                    Organization's Name
+                    <input type="text" name="business-name" required autocomplete="organization" title="Business Name">
+                </label>
+
+                <label>
+                    Membership Level
+                    <select name="membership-level" required>
+                        <option value="">-- Please choose an option --</option>
+                        <option value="np">NP Membership (Non-Profit, No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Organization Description
+                    <textarea name="org-description" title="Please describe your business or organization" rows="5"
+                        cols="30" required></textarea>
+                </label>
+
+                <input type="hidden" id="form-timestamp" name="form-timestamp" value="">
+
+
+                <input type="submit" value="Join now">
+            </form>
+
+            <div class="membership-cards">
+                <h2 id="membership-id">Membership Levels</h2>
+
+                <div class="card" id="np-member">
+                    <h3>NP Membership</h3>
+                    <p>Free membership for non-profit organizations.</p>
+                    <a onclick="document.getElementById('npLevel').showModal()">View Benefits</a>
+                </div>
+
+                <div class="card" id="bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic paid membership with access to local events.</p>
+                    <a onclick="document.getElementById('bronzeLevel').showModal()">View Benefits</a>
+                </div>
+
+                <div class="card" id="silver">
+                    <h3>Silver Membership</h3>
+                    <p>Includes Bronze perks + marketing and training access.</p>
+                    <a onclick="document.getElementById('silverLevel').showModal()">View Benefits</a>
+                </div>
+
+                <div class="card" id="gold">
+                    <h3>Gold Membership</h3>
+                    <p>All benefits including homepage spotlight and discounts.</p>
+                    <a onclick="document.getElementById('goldLevel').showModal()">View Benefits</a>
+                </div>
+
+
+            </div>
+            <dialog id="npLevel">
+                <h2>Non-Profit Membership</h2>
+                <button class="closeModal" onclick="document.getElementById('npLevel').close()">✕</button>
+                <ul>
+                    <li>Access to monthly newsletters</li>
+                    <li>Listing in member directory</li>
+                    <li>Invitations to free networking events</li>
+                </ul>
+            </dialog>
+            <dialog id="bronzeLevel">
+                <h2>Bronze Membership</h2>
+                <button class="closeModal" onclick="document.getElementById('bronzeLevel').close()">✕</button>
+                <ul>
+                    <li>All NP benefits, plus:</li>
+                    <li>Opportunity to present at member spotlights</li>
+                    <li>Discounted event tickets</li>
+                </ul>
+
+            </dialog>
+            <dialog id="silverLevel">
+                <h2>Silver Membership</h2>
+                <button class="closeModal" onclick="document.getElementById('silverLevel').close()">✕</button>
+                <ul>
+                    <li>All Bronze benefits, plus:</li>
+                    <li>Social media shoutouts (quarterly)</li>
+                    <li>Access to monthly workshops/training</li>
+                </ul>
+            </dialog>
+            <dialog id="goldLevel">
+                <h2>Gold Membership</h2>
+                <button class="closeModal" onclick="document.getElementById('goldLevel').close()">✕</button>
+                <ul>
+                    <li>All Silver benefits, plus:</li>
+                    <li>Homepage spotlight position on website</li>
+                    <li>Unlimited training/workshop access</li>
+                </ul>
+            </dialog>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <p>Contact Us : info@sowetothink.co.za | +27 11 359 6150</p>
+        <p>&copy;<span id="currentYear"></span>Soweto Think Chamber Of commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

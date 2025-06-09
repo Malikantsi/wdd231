@@ -28,6 +28,9 @@
 
 /* -------------------- For small devices -------------------- */
 @media screen and (max-width: 500px) {
+    #menu {
+        display: block;
+    }
 
     .midde-content {
         display: flex;
@@ -160,6 +163,28 @@
     .cards-list h2,
     .cards-list a {
         padding: 0.3rem;
+    }
+
+    .form-and-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin: auto 0;
+        width: 100%;
+    }
+
+    .membership-cards {
+        /* grid-template-columns: 1fr;
+        flex: 1;
+        margin-top: 0; */
+    }
+
+    #membership-id {
+        /* word-spacing: 60%; */
+        font-size: 15pt;
+        width: 100%;
     }
 
 
