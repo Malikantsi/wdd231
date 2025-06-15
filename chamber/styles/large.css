@@ -1,3 +1,13 @@
+/* large screens */
+@media screen and (min-width: 800px) {
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
 /* -------------------- For tablets and up -------------------- */
 @media screen and (min-width: 768px) {
     .card-places {
@@ -15,7 +25,7 @@
     .card-places figure {
         grid-column: 1;
         grid-row: 1/ 5 span;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     .card-places figure img {
@@ -23,7 +33,7 @@
     }
 
     .card-places h2 {
-        margin-top: 10px 0 0 0;
+        margin: 10px 0 0 0;
         text-align: left;
     }
 
@@ -35,23 +45,16 @@
         margin: 10px 10px 0 0;
     }
 
-    #menu {
-        display: none;
+    .card-places address {
+        margin: 10px 10px 0 0;
     }
 
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.75rem;
+    .card-places button {
+        margin: 10px 0;
     }
 
-    footer {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-        flex-wrap: wrap;
-    }
-} */
+
+}
 
 
 /* -------------------- For small devices -------------------- */
@@ -203,11 +206,31 @@
         width: 100%;
     }
 
-    .membership-cards {
-        /* grid-template-columns: 1fr;
-        flex: 1;
-        margin-top: 0; */
+    .card-places h2 {
+        margin: 0.5rem 10px;
     }
+
+    .card-places figure,
+    img {
+        width: 90%;
+        margin: 10px auto;
+        height: auto;
+    }
+
+    .card-places p {
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .card-places address {
+        margin: 10px 10px;
+
+    }
+
+    .card-places button {
+        margin: 10px auto;
+    }
+
 
     #membership-id {
         /* word-spacing: 60%; */

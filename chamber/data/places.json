@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Vilakazi Street Walk",
+        "cost": "Free",
+        "description": "The only street globally where two Nobel laureates—Nelson Mandela and Desmond Tutu—lived. It's lined with vibrant restaurants, art, and township life.",
+        "address": "Vilakazi Street, Orlando West, Soweto, Johannesburg 1804, South Africa",
+        "photo_url": "images/vilakasi-street.webp"
+    },
+    {
+        "name": "Mandela House Museum",
+        "cost": "Adults R180; Youth (7–18) R70; Children under 7 free",
+        "description": "Nelson Mandela's former home (1946–1962), now a museum preserving personal artifacts and South African history.",
+        "address": "8115 Vilakazi St, Orlando West, Soweto",
+        "photo_url": "images/mandela-house.webp"
+    },
+    {
+        "name": "Tutu House",
+        "cost": "Free to view (not open inside)",
+        "description": "Residence of Archbishop Desmond Tutu. A key heritage landmark on Vilakazi Street.",
+        "address": "Vilakazi Street, Orlando West, Soweto",
+        "photo_url": "images/tutu-house.webp"
+    },
+    {
+        "name": "Orlando Towers – Bungee Jump",
+        "cost": "R630 per person (R580 for groups ≥6); optional photos R100 / video R170",
+        "description": "100m bungee jump between colorful cooling towers—an iconic Soweto thrill.",
+        "address": "Cnr Sheffield Rd & Chris Hani Rd, Orlando East, Soweto",
+        "photo_url": "images/towers-jumping.webp"
+    },
+    {
+        "name": "Orlando Towers – SCAD Freefall",
+        "cost": "R400 per person (R360 for groups); includes photos/videos",
+        "description": "Strap in and freefall inside a tower—one of the few SCAD experiences in the world.",
+        "address": "Cnr Sheffield Rd & Chris Hani Rd, Orlando East, Soweto",
+        "photo_url": "images/free-fall.webp"
+    },
+    {
+        "name": "Orlando Towers – Paintball",
+        "cost": "R160 online / R200 onsite (includes 200 paintballs)",
+        "description": "Urban-style paintball arena for fun group challenges at the base of the towers.",
+        "address": "Cnr Sheffield Rd & Chris Hani Rd, Orlando East, Soweto",
+        "photo_url": "images/soweto_towers.webp"
+    },
+    {
+        "name": "Orlando Towers – Rock Climbing",
+        "cost": "R48 online / R60 onsite",
+        "description": "Beginner-friendly 25m climbing wall painted in vibrant murals.",
+        "address": "Cnr Sheffield Rd & Chris Hani Rd, Orlando East, Soweto",
+        "photo_url": "images/rock-climbing.webp"
+    },
+    {
+        "name": "Kliptown Open Air Museum",
+        "cost": "Often included in guided tours (approx R500–R900)",
+        "description": "Outdoor museum in Kliptown where the Freedom Charter was signed. Features powerful exhibitions and local storytelling.",
+        "address": "Walter Sisulu Square, Union St, Kliptown, Soweto",
+        "photo_url": "images/kliptown.webp"
+    },
+    {
+        "name": "Soweto Bicycle Tours",
+        "cost": "From R550 (2-hour tour)",
+        "description": "Guided cycling tours through Soweto townships including Vilakazi Street, local shebeens, and historical sites.",
+        "address": "Starts near Vilakazi Street precinct",
+        "photo_url": "images/bicycles.webp"
+    },
+    {
+        "name": "Soweto Food & Beer Walk",
+        "cost": "From R800 (4-hour tour)",
+        "description": "Explore Soweto’s culinary and beer culture on foot with local guides, tasting kota, shisa nyama, and craft brews.",
+        "address": "Starts at Vilakazi Street precinct",
+        "photo_url": "images/food .webp"
+    }
+]
