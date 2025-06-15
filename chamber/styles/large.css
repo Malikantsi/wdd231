@@ -1,10 +1,38 @@
 /* -------------------- For tablets and up -------------------- */
-/* @media screen and (min-width: 768px) {
-    nav {
-        display: flex !important;
-        flex-direction: row;
-        justify-content: center;
-        position: static;
+@media screen and (min-width: 768px) {
+    .card-places {
+
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph location"
+            "photograph address"
+            "photograph button";
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .card-places figure {
+        grid-column: 1;
+        grid-row: 1/ 5 span;
+        border: 1px solid black;
+    }
+
+    .card-places figure img {
+        height: 100%;
+    }
+
+    .card-places h2 {
+        margin-top: 10px 0 0 0;
+        text-align: left;
+    }
+
+    .card-places figure {
+        margin: 0 10px 0 0;
+    }
+
+    .card-places p {
+        margin: 10px 10px 0 0;
     }
 
     #menu {
