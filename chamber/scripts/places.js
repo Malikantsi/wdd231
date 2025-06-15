@@ -70,7 +70,7 @@ function getLocalStorageDate() {
         let timeDiff = Math.abs(new Date().getTime()) - Math.abs(dateLast.getTime());
         timeDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
         if (timeDiff <= 1) {
-            console.log("What?");
+            // console.log("What?");
             lastVisited.innerHTML = `Back so soon! Awesome!`;
         } else {
             lastVisited.innerHTML = `You last visited ${timeDiff} days ago.`;
