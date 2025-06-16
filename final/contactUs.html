@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mellow and cream by Lucia contact us page">
+    <meta name="author" content="Malikantsi Lekhoana">
+    <meta property="og:title" content="Mellow and Cream by Lucia contact us page">
+    <meta property="og:description" content="A page where you can fill in a form and contact our bakery">
+    <meta property="og:image" content="https://github.com/Malikantsi/wdd231/blob/main/final/images/coffee-cup.webp">
+    <meta property="og:url" content="https://malikantsi.github.io/wdd231/final/contactUs.html">
+    <title>Mellow And cream Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <script src="scripts/base.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="logo">
+
+            <button type="button" id="menu" name="menu" aria-label="menu"></button>
+
+
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contactUs.html">Contact Us</a>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main id="mainId">
+        <div class="contact-hero">
+            <h1>contact us</h1>
+            <img src="images/hero-breads1.jpg" alt="contact us hero">
+
+
+        </div>
+
+        <h1>CONTACT US</h1>
+
+        <section class="form-and-contacts">
+
+            <form method="GET" action="thankyou.html" class="designOne">
+                <h2>Get in touch</h2>
+                <label>
+                    First Name
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email">
+                </label>
+
+                <label>
+                    Cell Phone
+                    <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes">
+                </label>
+
+                <label>
+                    Company Name
+                    <input type="text" name="business-name" autocomplete="organization" title="Business Name">
+                </label>
+
+                <label>
+                    Service needed
+                    <select name="service" required>
+                        <option value="">-- Please choose an option --</option>
+                        <option value="order">Custom order</option>
+                        <option value="classes">Baking classes</option>
+                        <option value="bulk oders">Bulk Order</option>
+                        <option value="special">Special request</option>
+                    </select>
+                </label>
+
+                <label>
+                    Description
+                    <textarea name="org-description" title="Please describe your request in detail" rows="5" cols="30"
+                        required></textarea>
+                </label>
+
+                <input type="hidden" id="form-timestamp" name="form-timestamp" value="">
+
+
+                <input type="submit" value="Enquire ">
+            </form>
+
+            <div class="contacts">
+
+                <h3>Contact Details </h3>
+                <i class="fas fa-phone"></i>
+                <p>
+                    Mobile: (+27) 68 359 6150
+                    <br>Mobile: (+27) 71 658 3100
+                    <br>Landline: (+27) 11 359 6150
+                    <br>Mail: info@mellowncream.co.za
+                </p>
+                <img src="images/coffee-illutration.jpg" alt="coffee-illutration">
+
+            </div>
+
+
+    </main>
+
+    <footer>
+        <p>Contact Us : info@mellowncream.co.za | +27 11 359 6150</p>
+        <p>&copy;<span id="currentYear"></span>Mellow & Cream By Malikantsi Lekhoana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
