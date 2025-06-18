@@ -2,76 +2,76 @@
     {
         "name": "6 Cupcakes",
         "price": "R60.00",
-        "photo": "final/images/cupcakes.webp"
+        "photo": "images/cupcakes.webp"
     },
     {
         "name": "Chocolate Cake (Medium)",
         "price": "R250.00",
-        "photo": "final/images/chocolate-cake.webp"
+        "photo": "images/chocolate-cake.webp"
     },
     {
         "name": "Milk Tart (Melktert)",
         "price": "R90.00",
-        "photo": "final/images/milk-tart.webp"
+        "photo": "images/milk-tart.webp"
     },
     {
         "name": "Bento cake",
         "price": "R550.00",
-        "photo": "final/images/bento-cake.webp"
+        "photo": "images/bento-cake.webp"
     },
     {
         "name": "Coconut Lamingtons (6)",
         "price": "R55.00",
-        "photo": "final/images/lamintings.webp"
+        "photo": "images/lamintings.webp"
     },
     {
         "name": "Banana Bread (Loaf)",
         "price": "R45.00",
-        "photo": "final/images/banana-bread.webp"
+        "photo": "images/banana-bread.webp"
     },
     {
         "name": "Jam tarts (6)",
         "price": "R80.00",
-        "photo": "final/images/jam-tarts.webp"
+        "photo": "images/jam-tarts.webp"
     },
     {
         "name": "Scones with Jam & Cream (6)",
         "price": "R65.00",
-        "photo": "final/images/scones.webp"
+        "photo": "images/scones.webp"
     },
     {
         "name": "Artisanal bread",
         "price": "R110.00",
-        "photo": "final/images/artisianal-bread.webp"
+        "photo": "images/artisianal-bread.webp"
     },
     {
         "name": "Carrot Cake Slice",
         "price": "R35.00",
-        "photo": "final/images/carrot-cake.webp"
+        "photo": "images/carrot-cake.webp"
     },
     {
         "name": "Rolls (6)",
         "price": "R50.00",
-        "photo": "final/images/rolls.webp"
+        "photo": "images/rolls.webp"
     },
     {
         "name": "Birthday Cake (Decorated)",
         "price": "R450.00",
-        "photo": "final/images/birthday-cake.webp"
+        "photo": "images/birthday-cake.webp"
     },
     {
         "name": "Assorted Biscuits (500g)",
         "price": "R70.00",
-        "photo": "final/images/assorted-biscuits.webp"
+        "photo": "images/assorted-biscuits.webp"
     },
     {
         "name": "Bread",
         "price": "R20.00",
-        "photo": "final/images/bread.webp"
+        "photo": "images/bread.webp"
     },
     {
         "name": "Croissants (Plain, 4 Pack)",
         "price": "R48.00",
-        "photo": "final/images/Croissants.webp"
+        "photo": "images/Croissants.webp"
     }
 ]
