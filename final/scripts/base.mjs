@@ -1,5 +1,5 @@
-import savePreference from "/final/scripts/preference.js";
-import { getPreference } from "/final/scripts/preference.js";
+import savePreference from "./final/scripts/preference.js";
+import { getPreference } from "./final/scripts/preference.js";
 function openModal(id) {
     document.getElementById(id).style.display = "block";
 }
