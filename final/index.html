@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <script src="scripts/base.js" defer></script>
+    <script src="scripts/base.mjs" type="module"></script>
 </head>
 
 <body>
@@ -32,7 +33,6 @@
             <img src="images/logo.webp" alt="logo">
 
             <button type="button" id="menu" name="menu" aria-label="menu"></button>
-
 
             <nav class="navigation">
                 <a href="index.html">Home</a>
@@ -46,7 +46,13 @@
                 <a href="#"><i class="fab fa-tiktok"></i></a>
 
             </div>
-
+            <span class="theme-Container">
+                <label for="theme">Theme:</label>
+                <select id="theme" name="theme">
+                    <option value="Brown">Brown</option>
+                    <option value="Light">Light</option>
+                </select>
+            </span>
         </div>
     </header>
 
@@ -87,18 +93,12 @@
                 </p>
 
             </div>
-
             <div class="description-img">
                 <img src="images/description.webp" alt="">
-
             </div>
-
-
             <div class="coffee">
                 <img src="images/coffee-cup.webp" alt="">
-
             </div>
-
             <div class="coffee_description">
                 <h2><strong>Coffee First</strong></h2>
                 <p>
@@ -171,5 +171,6 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
 
 </html>

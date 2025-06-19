@@ -14,17 +14,16 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="scripts/base.mjs" type="module"></script>
 
 
-    <script src="scripts/base.js" defer></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=8b768217fac81b08049e3dd3f1004e88&callback=initMap"></script>
 
 </head>
 
@@ -40,6 +39,7 @@
                 <a href="index.html">Home</a>
                 <a href="product.html">Products</a>
                 <a href="contactUs.html">Contact Us</a>
+
             </nav>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -47,6 +47,14 @@
                 <a href="#"><i class="fab fa-tiktok"></i></a>
 
             </div>
+            <span class="theme-Container">
+                <label for="theme">Theme:</label>
+                <select id="theme" name="theme">
+                    <option disabled>Select Theme</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Light">Light</option>
+                </select>
+            </span>
 
         </div>
     </header>
@@ -66,7 +74,7 @@
 
         <section class="form-and-contacts">
 
-            <form method="GET" action="thankyou.html" class="designOne">
+            <form id="formInfo" name="formInfo" method="GET" action="contactUs.html" class="designOne">
                 <h2>Get in touch</h2>
                 <label>
                     First Name
@@ -114,7 +122,7 @@
                 <input type="hidden" id="form-timestamp" name="form-timestamp" value="">
 
 
-                <input type="submit" value="Enquire ">
+                <input id="submitForm" name="submitForm" type="submit" value="Enquire ">
             </form>
 
             <div class="contacts">
@@ -129,11 +137,25 @@
                 </p>
                 <img src="images/coffee-illutration.jpg" alt="coffee-illutration">
             </div>
+            <section class="map-section">
+                <h4>Find us</h4>
+                <div>
+                    <p>HOURS OF OPERATION
+                        <br>Monday-Friday: 7:00 – 19:00
+                        <br>Saturdays: 8:00 - 16:00 Sundays: 8:00 – 14:00
+                    </p>
 
-            <h4>Find us</h4>
-            <div id="map">
+                </div>
 
-            </div>
+                <div id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d114737.8765172914!2d27.91550088475954!3d-26.0152716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgolf%20park%20estate%20fourways!5e0!3m2!1sen!2sza!4v1739653939921!5m2!1sen!2sza"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </section>
+
 
 
     </main>

@@ -2,76 +2,91 @@
     {
         "name": "6 Cupcakes",
         "price": "R60.00",
-        "photo": "images/cupcakes.webp"
+        "photo": "images/cupcakes.webp",
+        "description": "A box of six fluffy, frosted cupcakes in assorted flavors."
     },
     {
         "name": "Chocolate Cake (Medium)",
         "price": "R250.00",
-        "photo": "images/chocolate-cake.webp"
+        "photo": "images/chocolate-cake.webp",
+        "description": "Rich and moist chocolate cake layered with silky ganache."
     },
     {
         "name": "Milk Tart (Melktert)",
         "price": "R90.00",
-        "photo": "images/milk-tart.webp"
+        "photo": "images/milk-tart.webp",
+        "description": "Traditional South African custard tart with a hint of cinnamon."
     },
     {
         "name": "Bento cake",
         "price": "R550.00",
-        "photo": "images/bento-cake.webp"
+        "photo": "images/bento-cake.webp",
+        "description": "Trendy mini cake perfect for personal celebrations or gifting."
     },
     {
         "name": "Coconut Lamingtons (6)",
         "price": "R55.00",
-        "photo": "images/lamintings.webp"
+        "photo": "images/lamintings.webp",
+        "description": "Sponge cake squares coated in chocolate and rolled in coconut."
     },
     {
         "name": "Banana Bread (Loaf)",
         "price": "R45.00",
-        "photo": "images/banana-bread.webp"
+        "photo": "images/banana-bread.webp",
+        "description": "Moist homemade banana bread with a golden crust."
     },
     {
         "name": "Jam tarts (6)",
         "price": "R80.00",
-        "photo": "images/jam-tarts.webp"
+        "photo": "images/jam-tarts.webp",
+        "description": "Buttery tartlets filled with fruity jam and baked to perfection."
     },
     {
         "name": "Scones with Jam & Cream (6)",
         "price": "R65.00",
-        "photo": "images/scones.webp"
+        "photo": "images/scones.webp",
+        "description": "Classic scones served with strawberry jam and whipped cream."
     },
     {
         "name": "Artisanal bread",
         "price": "R110.00",
-        "photo": "images/artisianal-bread.webp"
+        "photo": "images/artisianal-bread.webp",
+        "description": "Handcrafted bread with a crunchy crust and soft interior."
     },
     {
         "name": "Carrot Cake Slice",
         "price": "R35.00",
-        "photo": "images/carrot-cake.webp"
+        "photo": "images/carrot-cake.webp",
+        "description": "A slice of spiced carrot cake with creamy frosting."
     },
     {
         "name": "Rolls (6)",
         "price": "R50.00",
-        "photo": "images/rolls.webp"
+        "photo": "images/rolls.webp",
+        "description": "Soft dinner rolls perfect for any meal or sandwich."
     },
     {
         "name": "Birthday Cake (Decorated)",
         "price": "R450.00",
-        "photo": "images/birthday-cake.webp"
+        "photo": "images/birthday-cake.webp",
+        "description": "Celebration cake customized with colorful decorations."
     },
     {
         "name": "Assorted Biscuits (500g)",
         "price": "R70.00",
-        "photo": "images/assorted-biscuits.webp"
+        "photo": "images/assorted-biscuits.webp",
+        "description": "A half-kilo mix of delicious home-style biscuits."
     },
     {
         "name": "Bread",
         "price": "R20.00",
-        "photo": "images/bread.webp"
+        "photo": "images/bread.webp",
+        "description": "Freshly baked loaf perfect for toasting or sandwiches."
     },
     {
         "name": "Croissants (Plain, 4 Pack)",
         "price": "R48.00",
-        "photo": "images/Croissants.webp"
+        "photo": "images/Croissants.webp",
+        "description": "Flaky, buttery croissants baked fresh every morning."
     }
 ]
