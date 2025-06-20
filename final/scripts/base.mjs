@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function closeModal(id) {
         const modal = document.querySelector(id);
         modal.style.display = 'none';
-
     }
 
 });

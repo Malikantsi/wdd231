@@ -526,6 +526,13 @@ form input[type=submit] {
     background-color: var(--color-cream);
 }
 
+#results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+}
+
 .contact-form {
     flex: 1 1 45%;
     background-color: white;
