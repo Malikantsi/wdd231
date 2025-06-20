@@ -18,6 +18,14 @@ window.onclick = function (event) {
     });
 };
 
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector(' nav');
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
+
 const theme = document.querySelector('#theme');
 theme.addEventListener("change", () => {
     savePreference();

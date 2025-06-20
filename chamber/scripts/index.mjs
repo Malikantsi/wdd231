@@ -17,9 +17,12 @@ const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector(' nav');
 
 hamButton.addEventListener('click', () => {
+    alert("I'm clicked");
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+
 
 const members = './data/members.json';
 const cards = document.querySelector('.cards');
